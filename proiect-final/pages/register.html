@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina de inregistrare</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="../index.html">Acasa</a>
+          </li>
+
+          <li>
+            <a href="./contact.html">Contacteaza-ma</a>
+          </li>
+
+          <li>
+            <a href="./login.html">Logeaza-te</a>
+          </li>
+
+          <li>
+            <a href="./blog.html">Blog</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+
+    <main>
+      <h1>Inregistreaza-te</h1>
+
+      <form action="inregistrare" method="post">
+        <label for="utilizator" id="utilizator" name="utilizator"
+          >Utilizator:</label
+        >
+        <input
+          type="text"
+          name="utilizator"
+          id="utilizator"
+          required
+        /><br /><br />
+
+        <label for="password" id="password" name="password">Parola:</label>
+        <input type="password" name="password" id="password" required />
+        <br /><br />
+
+        <label
+          for="confirm-password"
+          id="confirm-password"
+          name="confirm-password"
+          >Confirmare parola:</label
+        >
+        <input type="password" name="confirm-password" id="confirm-password" />
+        <br /><br />
+
+        <label for="email" id="email" name="email">Email:</label>
+        <input type="email" name="email" id="email" required />
+        <br /><br />
+
+        <label> Sex </label>
+        <br />
+        <label for="male">
+          <input type="checkbox" name="sex" id="male" value="male" />
+          Masculin</label
+        >
+
+        <label for="female">
+          <input type="checkbox" name="sex" id="female" value="female" />
+          Feminin</label
+        ><br /><br />
+
+        <label for="poza">Încarcă poza:</label>
+        <input type="file" id="poza" name="poza" accept="image/*" />
+        <br /><br />
+
+        <input type="submit" value="Înregistrare" />
+      </form>
+    </main>
+    <hr />
+
+    <footer>
+      <p>&copy; 2023 Bocos Ioan. Toate drepturile rezervate.</p>
+    </footer>
+  </body>
+</html>
