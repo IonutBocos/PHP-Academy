@@ -1,0 +1,37 @@
+Selectori universali
+
+* { }
+
+Selectori de tip clasa
+
+.tag{ }
+div.tag{ }
+
+<div class="tag">
+
+
+</div>
+
+Selectori de tip id
+
+#tag{
+
+color:red;
+
+}
+
+<div id="tag">
+
+
+</div>
+
+
+Selector de tip copil
+
+li > a { }
+
+
+
+
+
+
