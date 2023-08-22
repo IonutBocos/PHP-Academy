@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1280px;
+  }
+}
+
+@keyframes slide-in {
+  100% {
+    opacity: 1;
+    left: 50%;
+  }
+}
+
+.product {
+  margin-top: 100px;
+  position: relative;
+  min-width: 350px;
+  min-height: 500px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-img {
+  width: 40%;
+  height: 500px;
+  background: #fff;
+  position: relative;
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: fade-in 1s forwards 1;
+}
+
+.product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  user-select: none;
+}
+
+.tag {
+  position: absolute;
+  top: 20px;
+  left: -10px;
+  transform-origin: left;
+  opacity: 0;
+  transform: rotate(-90deg);
+  text-transform: capitalize;
+  color: #eae3d2;
+  padding: 5px 10px;
+  width: 100px;
+  font-size: 18px;
+  text-align: center;
+  background: #292929;
+  user-select: none;
+  animation: tag 0.5s 1s forwards 1;
+}
+
+@keyframes tag {
+  100% {
+    opacity: 1;
+    transform: rotate(-20deg);
+  }
+}
+
+.product-listing {
+  width: 60%;
+  min-height: 500px;
+  height: auto;
+  background: #fff;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  color: black;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fade-in 1s forwards 1;
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.name {
+  font-family: 'dosis';
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+.info {
+  font-size: 18px;
+  line-height: 30px;
+  margin: 50px 0;
+}
+
+.price {
+  font-size: 30px;
+  font-weight: 100;
+  margin-bottom: 20px;
+  color: #d92121;
+}
+
+.buy {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.buy-1 {
+  text-align: center;
+  font-size: 25px;
+  padding: 18px;
+  color: white;
+  background-color: #d92121;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.buy-1,
+.fa-solid {
+  padding-right: 15px;
+  border-right: 1px solid white;
+  font-size: 25px;
+}
+
+@media (max-width: 1100px) {
+  body::before {
+    transform: translateX(-50%) skewX(-5deg);
+  }
+  .product {
+    flex-direction: column;
+    width: 90%;
+    margin: 5vh 0;
+  }
+  .product-img {
+    width: 100%;
+    height: 300px;
+  }
+  .product-listing {
+    width: 100%;
+    min-height: auto;
+  }
+  .name,
+  .price {
+    font-size: 50px;
+  }
+  .info {
+    font: 16px;
+  }
+}
